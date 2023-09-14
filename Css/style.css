@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body{
+    font-family: 'Russo One', sans-serif;
+}
+
+/*----- Estilos para centrar todo el contenido -----*/
+.Content__404{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*----- Estilo responsive para que el texto se posicione debajo del gif -----*/
+@media (max-width: 500px){
+    .Content__404{
+        flex-direction: column;
+    }
+}
+
+/*----- Estilo para darle ancho a la imagen -----*/
+.Img_Error img{
+    width: 250px;
+}
+
+/*----- Estilos para el tamaño, el margen y el color al texto -----*/
+.Notice_Error{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+/*----- Estilos del boton de "volver al inicio" -----*/
+.Notice_Error button{
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-family: 'Russo One', sans-serif;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.Notice_Error button:hover{
+    background-color: #828080;
+    transition: all .2s ease-in-out;
+}
+
+/*----- Estilos del gif secundario -----*/
+.ContentImg{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 150px;
+}
+
+/*----- Estilos para alinear el contenedor -----*/
+.ContentDark {
+    padding: 20px;
+}
+
+/*----- Estilos para el color de modo oscuro -----*/
+.dark-theme {
+    background-color: #000;
+    color: #fff;
+}
+
+/*----- Estilos para el color de modo claro -----*/
+.light-theme {
+    background-color: #fff;
+    color: #000;
+}
