@@ -1,65 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
-body{
-    font-family: 'Russo One', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
 }
 
 /*----- Estilos para centrar todo el contenido -----*/
-.Content__404{
+.ContentError{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-/*----- Estilo responsive para que el texto se posicione debajo del gif -----*/
-@media (max-width: 500px){
-    .Content__404{
-        flex-direction: column;
-    }
+/*----- Estilos para alinear el contenedor -----*/
+.ButtonThemeDark{
+    position: absolute;
+    top: 2%;
+    right: 2.5%;
+}
+
+.ButtonThemeDark button{
+    border: 0;
+    padding: 10px 25px;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
 /*----- Estilo para darle ancho a la imagen -----*/
+.Img_Error{
+    display: grid;
+    place-content: center;
+}
+
 .Img_Error img{
     width: 250px;
 }
 
-/*----- Estilos para el tamaño, el margen y el color al texto -----*/
+/*----- Estilos para el texto de Error -----*/
 .Notice_Error{
-    font-size: 25px;
-    margin-left: 20px;
+    margin-top: 20px;
 }
 
-/*----- Estilos del boton de "volver al inicio" -----*/
-.Notice_Error button{
-    border: 0;
-    padding: 10px 15px;
-    border-radius: 8px;
+.Notice_Error div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.Notice_Error div .Eyes_Error{
+    width: 40px;
+    height: 20px;
+}
+
+.Notice_Error div h2{
+    text-align: center;
+}
+
+.Notice_Error div a{
+    text-decoration: none;
+    margin-left: 10px;
     font-weight: 700;
-    font-family: 'Russo One', sans-serif;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
+    color: rgb(0, 0, 201);
+    transition: all .2 ease-in;
 }
 
-.Notice_Error button:hover{
-    background-color: #828080;
-    transition: all .2s ease-in-out;
-}
-
-/*----- Estilos del gif secundario -----*/
-.ContentImg{
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    width: 150px;
-}
-
-/*----- Estilos para alinear el contenedor -----*/
-.ContentDark {
-    padding: 20px;
+.Notice_Error div a:hover{
+    transition: all .2 ease-in;
+    color: rgb(29, 29, 239);
 }
 
 /*----- Estilos para el color de modo oscuro -----*/
