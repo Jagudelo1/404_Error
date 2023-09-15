@@ -20,16 +20,16 @@
 /*----- Estilos para alinear el contenedor -----*/
 .ButtonThemeDark{
     position: absolute;
-    top: 2%;
-    right: 2.5%;
+    top: 4%;
+    right: 4%;
 }
 
-.ButtonThemeDark button{
-    border: 0;
-    padding: 10px 25px;
-    border-radius: 12px;
-    cursor: pointer;
+.Swicht{
+    position: absolute;
+    top: 5%;
+    left: 3%;
 }
+
 
 /*----- Estilo para darle ancho a la imagen -----*/
 .Img_Error{
@@ -76,6 +76,10 @@
     color: rgb(29, 29, 239);
 }
 
+.Notice_Error div img{
+    width: 100px;
+}
+
 /*----- Estilos para el color de modo oscuro -----*/
 .dark-theme {
     background-color: #000;
@@ -86,4 +90,32 @@
 .light-theme {
     background-color: #fff;
     color: #000;
+}
+
+@media (max-width: 640px){
+    .ButtonThemeDark{
+        position: absolute;
+        top: 4%;
+        right: 5%;
+    }
+
+    .Swicht{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+}
+
+@media (max-width: 320px){
+    .ButtonThemeDark{
+        position: absolute;
+        top: 4%;
+        right: 6%;
+    }
+
+    .Swicht{
+        position: absolute;
+        top: 5%;
+        left: 7%;
+    }
 }
